@@ -27,7 +27,6 @@ class table():
     def add_class(self,name,day,time,positon,start,end):
         weeks=cal_week(start,end)
         addlist=[name,day,time,positon]+weeks
-        print(addlist)
         if self.classtable.loc[0,"classname"]=='demo':
             self.classtable.loc[len(self.classtable)-1]=addlist
         else:
@@ -39,10 +38,10 @@ class table():
 a=table()
 a.add_class('新中特',[1,3],[4],'西十二教N212',2,10)
 a.add_class('人工智能导论',[1,3],[6],'西十二教N303',2,5)
-a.add_class('学术规范与论文写作',[2,4],,'西十二教S212',11,16)
-a.add_class('数理统计',[2,4],'西十二教N304',2,13)
-a.add_class('机器人学',[2,6],'西十二教N303',2,5)
-a.add_class('人工智能导论',[1,6],'西十二教N303',2,5)
+# a.add_class('学术规范与论文写作',[2,4],'西十二教S212',11,16)
+# a.add_class('数理统计',[2,4],'西十二教N304',2,13)
+# a.add_class('机器人学',[2,6],'西十二教N303',2,5)
+# a.add_class('人工智能导论',[1,6],'西十二教N303',2,5)
 
 
 a.save()
